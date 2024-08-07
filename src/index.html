@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<!-- navigation bar -->
+<!-- Start navigation bar -->
 
 <nav class="max-w-7xl mx-auto">
     <div class="flex justify-between items-center">
@@ -17,9 +17,9 @@
         </div>
         <!-- primary nav  -->
         <div class="flex justify-between items-center space-x-5">
-            <p>SHOP</p>
-            <p>ABOUT</p>
-            <p>CONTACTS</p>
+            <p><a href="#">SHOP</a></p>
+            <p><a href="#">ABOUT</a></p>
+            <p><a href="#">CONTACTS</a></p>
         </div>
         <div class="flex justify-between items-center space-x-5 ">
                 <!-- search button  -->
@@ -37,36 +37,41 @@
         </div>
     </div>
 </nav>
+<!-- end nav  -->
 
-<!-- Hero section left     -->
- <div class="">
+<!-- Start Hero section-->
+ <div class=" flex mx-auto>
+    <div class="flex justify-between items-center">
+    <!-- hero section left -->
     <!-- website name -->
-    <div class="name">
-        <p>Stop, get</p>
-        <p>&</p>
-        <p class="">furnish</p>
+        <div class="mt-12 ml-12">
+            <p class="font-serif text-4xl">Stop,get</p>
+            <p class="text-5xl font-bold text-yellow-600">& <span class="text-black">furnish.</span></p>
+            <!-- description --> 
+            <p class="mt-36 font-semibold">We create furniture, interiors <br> 
+                & accessories with respect <br>
+                for people & the environment.
+            </p>
+            <!-- button  -->
+            <div class="mt-6">
+                <button class="px-5 py-2 bg-yellow-600 text-white rounded-sm text-lg font-semibold transform hover:scale-105">Catalog</button>
+            </div>
+        </div>
+
+    <!-- hero section right  -->
+        <div class="flex justify-between items-center">
+            <!-- <div class="p-0">
+                <p>Tables</p>
+                <p>Chair</p>
+                <p>Bed</p>
+                <p>Interiors</p>
+                <p>Sofa</p>
+            </div> -->
+        <div  class="">
+            <img class="max-w-2xl ml-96 mt-12" src="img/furniture1.jpg" alt="hero image">
+        </div>                                
     </div>
-    <!-- description -->
-     <div class="description">
-        <p>
-            We create furniture, interiors & accessories with respect for people & the environemnt.
-        </p>
-     </div>
-    <!-- button  -->
-    <div class="catelog">
-        <button>Catelog</button>
-    </div>
- </div>
- <!-- hero section right  -->
-  <div class="">
-    <div>
-        <p>Tables</p>
-        <p>Chair</p>
-        <p>Bed</p>
-        <p>Interiors</p>
-        <p>Sofa</p>
-    </div>
-    <img src="img/furniture1.jpg" alt="" class="mx-auto h-96 align-middle">
   </div>
+<!-- End hero section  -->
 </body>
 </html>
