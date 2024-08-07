@@ -785,6 +785,10 @@ video {
   outline-offset: 2px;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
