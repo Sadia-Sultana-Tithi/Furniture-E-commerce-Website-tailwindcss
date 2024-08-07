@@ -40,10 +40,10 @@
 <!-- end nav  -->
 
 <!-- Start Hero section-->
- <div class=" flex mx-auto>
+<div class="flex mx-auto">
     <div class="flex justify-between items-center">
-    <!-- hero section left -->
-    <!-- website name -->
+        <!-- hero section left -->
+        <!-- website name -->
         <div class="mt-12 ml-12">
             <p class="font-serif text-4xl">Stop,get</p>
             <p class="text-5xl font-bold text-yellow-600">& <span class="text-black">furnish.</span></p>
@@ -59,20 +59,27 @@
             </div>
         </div>
 
-    <!-- hero section right  -->
-        <div class="flex justify-between items-center">
-            <!-- <div class="p-0">
-                <p>Tables</p>
-                <p>Chair</p>
-                <p>Bed</p>
-                <p>Interiors</p>
-                <p>Sofa</p>
-            </div> -->
-        <div  class="">
-            <img class="max-w-2xl ml-96 mt-12" src="img/furniture1.jpg" alt="hero image">
-        </div>                                
+        <!-- hero section right -->
+        <div class="flex items-start mt-12 ml-72">
+        <!-- Vertical clickable list -->
+            <div class="flex flex-col space-y-2 mr-4">
+                <button class="text-left text-sm" onclick="changeImage('img/furniture1.jpg')">Tables</button>
+                <button class="text-left text-sm" onclick="changeImage('img/furniture2.jpg')">Chairs</button>
+                <button class="text-left text-sm" onclick="changeImage('img/furniture3.jpg')">Beds</button>
+                <button class="text-left text-sm" onclick="changeImage('img/furniture4.jpg')">Interiors</button>
+                <button class="text-left text-sm" onclick="changeImage('img/furniture5.jpg')">Sofas</button>
+            </div>
+        <!-- Image -->
+        <div class="float-right">
+            <img id="heroImage" class="max-w-2xl" src="img/furniture1.jpg" alt="hero image">
+        </div>
     </div>
-  </div>
-<!-- End hero section  -->
+</div>
+<!-- End hero section -->
+<script>
+    function changeImage(imageSrc) {
+        document.getElementById('heroImage').src = imageSrc;
+    }
+</script>
 </body>
 </html>
