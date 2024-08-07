@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Furniture Website</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="h-screen overflow-y-auto">
 <!-- Start navigation bar -->
 
 <nav class="max-w-7xl mx-auto">
@@ -77,9 +77,10 @@
 </div>
 <!-- End hero section -->
 
-<!-- start section 2 -->
- 
- <!-- end section 2 -->
+<!-- Start section 2 -->
+<div class="overflow-hidden">
+
+<!-- End section 2 -->
 <script>
     function changeImage(imageSrc) {
         document.getElementById('heroImage').src = imageSrc;
