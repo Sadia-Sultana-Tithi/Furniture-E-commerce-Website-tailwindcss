@@ -41,23 +41,51 @@
 
 <div class="py-12 bg-white">
     <div class="container mx-auto px-4 flex">
-        
-        <div class="flex justify-between items-center">
-            <div class="mt-12 ml-10">
-                <p class="font-serif text-4xl">Stop,get</p>
-                <p class="text-5xl font-bold text-yellow-600">& <span class="text-black">furnish.</span></p>
-                <!-- description --> 
-                <p class="mt-36 font-semibold">We create furniture, interiors <br> 
-                    & accessories with respect <br>
-                    for people & the environment.
-                </p>
-                <!-- button  -->
-                <div class="mt-6">
-                    <button class="px-5 py-2 bg-yellow-600 text-white rounded-sm text-lg font-semibold 
-                    transform hover:scale-105 duration-500">Catalog</button>
-                </div>
+
+        <!-- Start Hero section-->
+<div class="container">
+    <div class="flex justify-between items-center">
+        <!-- hero section left -->
+        <!-- website name -->
+        <div class="mt-12 ml-10">
+            <p class="font-serif text-4xl">Stop,get</p>
+            <p class="text-5xl font-bold text-yellow-600">& <span class="text-black">furnish.</span></p>
+            <!-- description --> 
+            <p class="mt-36 font-semibold">We create furniture, interiors <br> 
+                & accessories with respect <br>
+                for people & the environment.
+            </p>
+            <!-- button  -->
+            <div class="mt-6">
+                <button class="px-5 py-2 bg-yellow-600 text-white rounded-sm text-lg font-semibold 
+                transform hover:scale-105 duration-500">Catalog</button>
             </div>
         </div>
+
+        <!-- hero section right -->
+        <div class="flex items-start mt-12">
+        <!-- Vertical clickable list -->
+            <div class="flex flex-col space-y-1 mr-5">
+                    <button id="btn1" class="text-right text-sm" onclick="changeImageAndColor('img/furniture1.jpg', 'btn1')">Tables</button>
+                    <button id="btn2" class="text-right text-sm" onclick="changeImageAndColor('img/furniture2.jpg', 'btn2')">Chairs</button>
+                    <button id="btn3" class="text-right text-sm" onclick="changeImageAndColor('img/furniture3.jpg', 'btn3')">Beds</button>
+                    <button id="btn4" class="text-right text-sm" onclick="changeImageAndColor('img/furniture4.jpg', 'btn4')">Interiors</button>
+                    <button id="btn5" class="text-right text-sm" onclick="changeImageAndColor('img/furniture5.jpg', 'btn5')">Sofas</button>
+            </div>
+        <!-- Image -->
+        <div class="">
+            <img id="heroImage" class="max-w-2xl" src="img/furniture1.jpg" alt="hero image">
+        </div>
+    </div>
+
+    <!-- start section 2  -->
+     <div class="w-full">
+        <img id="section 2" class="" src="img/furniture1.jpg" alt="hero image">
+     </div>
+    <!-- end section 2  -->
+     
+</div>
+<!-- End hero section -->
  
     </div>
 </div>
