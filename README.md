@@ -13,10 +13,10 @@ A modern and responsive furniture website template built with HTML, CSS, and Tai
 
 ## Built with:
 
-HTML5
-CSS3
-Tailwind CSS
-Font Awesome icons
+- HTML5
+- CSS3
+- Tailwind CSS
+- Font Awesome icons
 
 ## Perfect for:
 
