@@ -18,6 +18,9 @@ A modern and responsive furniture website template built with HTML, CSS, and Tai
 - Tailwind CSS
 - Font Awesome icons
 
+## Screenshot
+![website template](furniture ecommerce.jpg)
+
 ## Perfect for:
 
 Furniture stores and online marketplaces
