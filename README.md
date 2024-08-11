@@ -19,7 +19,7 @@ A modern and responsive furniture website template built with HTML, CSS, and Tai
 - Font Awesome icons
 
 ## Screenshot
-![Image Description](img/furniture_ecommerce.jpg)
+![Image Description](src/img/furniture_ecommerce.jpg)
 
 ## Perfect for:
 
