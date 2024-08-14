@@ -20,6 +20,7 @@ A modern and responsive furniture website template built with HTML, CSS, and Tai
 
 ## Screenshot
 ![Website template](src/img/demo.png)
+![Website template](src/img/description.png)
 
 ## Perfect for:
 
