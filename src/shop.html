@@ -119,7 +119,7 @@
 <!-- start popular section -->
 <div class="mt-12 ml-12 ">
     <h2 class="text-xl font-normal">POPULAR</h2>
-  </div>
+</div>
   <!-- end popular section -->
   
 <!-- start section 6 -->
@@ -231,16 +231,24 @@
 <!-- end main  -->
 <script>
     //fetch file name
-    var url = document.URL;
-    var path = url.split('/');
-    var breadcrumb = '';
-    for (var i = 3; i < path.length - 1; i++) {
-        breadcrumb += path[i] + ' > ';
-    }
-    var filename = path[path.length - 1];
-    var filenameWithoutExtension = filename.split('.').slice(0, -1).join('.');
-    breadcrumb += filenameWithoutExtension;
-    document.getElementById("filename").innerHTML = 'Home > ' + breadcrumb;
+var url = document.URL;
+var path = url.split('/');
+var breadcrumb = '';
+var filenames = [];
+
+// delete previous array of filenames in local storage
+localStorage.removeItem('filenames');
+
+// store filenames in local storage
+var filename = path[path.length - 1];
+var filenameWithoutExtension = filename.split('.').slice(0, -1).join('.');
+filenames.push(filenameWithoutExtension);
+
+// store filenames in local storage
+localStorage.setItem('filenames', JSON.stringify(filenames));
+
+breadcrumb += filenames.join(' > ');
+document.getElementById("filename").innerHTML = 'Home > ' + breadcrumb;
 </script>
 </body>
 </html>
